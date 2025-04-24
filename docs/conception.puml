@@ -1,0 +1,68 @@
+@startuml
+left to right direction
+
+actor "Job-Seeker"        as JS
+actor "Employer"          as E
+actor "Tourist"           as T
+actor "Guide"             as G
+actor "Seller"            as S
+' actor "Delivery Partner"  as DP
+' actor "Business Partner"  as BP
+actor "Admin"             as A
+
+rectangle "Job Matching" {
+  usecase "Register / Login"             as UC1
+  usecase "Manage Profile"               as UC2
+  usecase "Post Job Offers"              as UC3
+  usecase "Search & Apply to Jobs"       as UC4
+  usecase "Create Global Event"          as UC5
+}
+
+rectangle "Guide & Tours" {
+  usecase "Create Guide Profile"         as UC6
+  usecase "Find & Book Guide"            as UC7
+}
+
+rectangle "Marketplace" {
+  usecase "List Products for Sale"       as UC8
+  usecase "Order Products"               as UC9
+  ' usecase "Track Order"                  as UC10
+}
+
+rectangle "Destinations & Hospitality" {
+  usecase "Browse Destinations"          as UC11
+  usecase "Browse Hotels & Restaurants"  as UC12
+  ' usecase "Premium Listing"              as UC13
+}
+
+rectangle "AI & Global Events" {
+  usecase "Use AI to Search Services"    as UC14
+  usecase "Get Smart Suggestions"        as UC15
+  ' usecase "Switch Between Events"        as UC16
+}
+
+JS -- UC1
+JS -- UC2
+JS -- UC4
+
+E  -- UC1
+E  -- UC2
+E  -- UC3
+
+A  -- UC5
+
+G  -- UC6
+T  -- UC7
+
+S  -- UC8
+T  -- UC9
+' DP --> UC10
+
+T  -- UC11
+T  -- UC12
+' BP --> UC13
+
+T  -- UC14
+T  -- UC15
+' T  --> UC16
+@enduml

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GloboFun - Votre Compagnon pour la Coupe du Monde 2030</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Globo</span><span class="fun">Fun</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#emplois">Emplois</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cta-button"><a href="#telecharger">Télécharger</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Vivez pleinement la <span class="highlight">Coupe du Monde 2030</span></h1>
+            <p>Une plateforme tout-en-un pour les emplois, les guides, l'hébergement et plus encore</p>
+            <div class="hero-buttons">
+                <a href="#telecharger" class="btn primary">Télécharger l'App</a>
+                <a href="#fonctionnalites" class="btn secondary">Découvrir</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="150">0</span>k+
+                    <span class="stat-label">Utilisateurs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Pays Hôtes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="48">0</span>
+                    <span class="stat-label">Équipes</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="world-map">
+                <div class="pulse-point" style="top: 35%; left: 15%;" data-country="Maroc"></div>
+                <div class="pulse-point" style="top: 30%; left: 48%;" data-country="Espagne"></div>
+                <div class="pulse-point" style="top: 38%; left: 45%;" data-country="Portugal"></div>
+                <img src="world-map.png" alt="Carte du monde avec les pays hôtes de la Coupe du Monde 2030">
+            </div>
+            <div class="country-info" id="country-info">
+                <h3>Pays Hôte</h3>
+                <p>Survolez un point pour voir les informations</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fonctionnalites" class="features">
+        <div class="section-header">
+            <h2>Tout ce dont vous avez besoin en un seul endroit</h2>
+            <p>GloboFun réunit toutes les fonctionnalités essentielles pour profiter pleinement des événements sportifs mondiaux</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Recrutement et Emploi</h3>
+                <p>Trouvez des opportunités de travail liées aux événements ou recrutez les meilleurs talents</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>Guides et Tours</h3>
+                <p>Réservez des guides locaux ou proposez vos services pour faire découvrir votre ville</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Marché de Produits</h3>
+                <p>Achetez ou vendez des produits liés aux événements avec livraison via nos partenaires</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hotel"></i>
+                </div>
+                <h3>Hébergement</h3>
+                <p>Découvrez les meilleures options d'hébergement dans chaque ville hôte</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Intelligence Artificielle</h3>
+                <p>Notre IA vous aide à trouver rapidement ce qui correspond à vos besoins</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Événements Mondiaux</h3>
+                <p>Une plateforme adaptable à tous les grands événements sportifs internationaux</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="section-header">
+            <h2>Découvrez les destinations de la Coupe du Monde 2030</h2>
+            <p>Explorez les villes hôtes et préparez votre voyage dès maintenant</p>
+        </div>
+        <div class="destination-slider">
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="casablanca.jpg" alt="Casablanca, Maroc">
+                </div>
+                <div class="destination-info">
+                    <h3>Casablanca</h3>
+                    <p>Maroc</p>
+                    <div class="destination-features">
+                        <span><i class="fas fa-hotel"></i> 250+ hôtels</span>
+                        <span><i class="fas fa-utensils"></i> 400+ restaurants</span>
+                    </div>
+                    <a href="#" class="btn secondary">Explorer</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="madrid.jpg" alt="Madrid, Espagne">
+                </div>
+                <div class="destination-info">
+                    <h3>Madrid</h3>
+                    <p>Espagne</p>
+                    <div class="destination-features">
+                        <span><i class="fas fa-hotel"></i> 500+ hôtels</span>
+                        <span><i class="fas fa-utensils"></i> 800+ restaurants</span>
+                    </div>
+                    <a href="#" class="btn secondary">Explorer</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="lisbon.jpg" alt="Lisbonne, Portugal">
+                </div>
+                <div class="destination-info">
+                    <h3>Lisbonne</h3>
+                    <p>Portugal</p>
+                    <div class="destination-features">
+                        <span><i class="fas fa-hotel"></i> 350+ hôtels</span>
+                        <span><i class="fas fa-utensils"></i> 600+ restaurants</span>
+                    </div>
+                    <a href="#" class="btn secondary">Explorer</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="emplois" class="jobs">
+        <div class="section-header">
+            <h2>Opportunités d'emploi pour la Coupe du Monde 2030</h2>
+            <p>Rejoignez l'aventure et participez à l'organisation de cet événement mondial</p>
+        </div>
+        <div class="jobs-container">
+            <div class="jobs-filter">
+                <div class="filter-group">
+                    <label for="job-location">Lieu</label>
+                    <select id="job-location">
+                        <option value="all">Tous les lieux</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="job-category">Catégorie</label>
+                    <select id="job-category">
+                        <option value="all">Toutes les catégories</option>
+                        <option value="hospitality">Hospitalité</option>
+                        <option value="security">Sécurité</option>
+                        <option value="tech">Technologie</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                </div>
+                <button class="btn primary">Filtrer</button>
+            </div>
+            <div class="jobs-list">
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>Responsable Hospitalité VIP</h3>
+                        <span class="job-type">Temps plein</span>
+                    </div>
+                    <div class="job-details">
+                        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</p>
+                        <p class="job-company"><i class="fas fa-building"></i> Comité d'Organisation CM2030</p>
+                    </div>
+                    <p class="job-description">Gérez l'expérience des invités VIP pendant les matchs de la Coupe du Monde 2030 à Casablanca.</p>
+                    <a href="#" class="btn secondary">Postuler</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>Technicien Audiovisuel</h3>
+                        <span class="job-type">Contrat</span>
+                    </div>
+                    <div class="job-details">
+                        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Madrid, Espagne</p>
+                        <p class="job-company"><i class="fas fa-building"></i> MediaSport International</p>
+                    </div>
+                    <p class="job-description">Installation et maintenance des équipements audiovisuels dans les stades pendant la compétition.</p>
+                    <a href="#" class="btn secondary">Postuler</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3>Guide Touristique Bilingue</h3>
+                        <span class="job-type">Freelance</span>
+                    </div>
+                    <div class="job-details">
+                        <p class="job-location"><i class="fas fa-map-marker-alt"></i> Lisbonne, Portugal</p>
+                        <p class="job-company"><i class="fas fa-building"></i> TourGuide Pro</p>
+                    </div>
+                    <p class="job-description">Accompagnez les groupes de supporters internationaux et faites-leur découvrir Lisbonne.</p>
+                    <a href="#" class="btn secondary">Postuler</a>
+                </div>
+            </div>
+            <div class="jobs-more">
+                <a href="#" class="btn primary">Voir plus d'offres</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="app-preview" class="app-preview">
+        <div class="app-content">
+            <h2>Découvrez l'application GloboFun</h2>
+            <p>Téléchargez notre application et accédez à toutes les fonctionnalités depuis votre smartphone</p>
+            <ul class="app-features-list">
+                <li><i class="fas fa-check-circle"></i> Réservation de guides en quelques clics</li>
+                <li><i class="fas fa-check-circle"></i> Alertes pour les offres d'emploi</li>
+                <li><i class="fas fa-check-circle"></i> Recommandations IA personnalisées</li>
+                <li><i class="fas fa-check-circle"></i> Marketplace de produits officiels</li>
+                <li><i class="fas fa-check-circle"></i> Navigation hors-ligne dans les villes hôtes</li>
+            </ul>
+            <div class="app-buttons">
+                <a href="#" class="app-button">
+                    <i class="fab fa-google-play"></i>
+                    <span>
+                        <small>Télécharger sur</small>
+                        Google Play
+                    </span>
+                </a>
+                <a href="#" class="app-button">
+                    <i class="fab fa-apple"></i>
+                    <span>
+                        <small>Télécharger sur</small>
+                        App Store
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="app-mockup">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <img src="app-screen.jpg" alt="Application GloboFun sur smartphone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Ce que disent nos utilisateurs</h2>
+            <p>Découvrez les expériences de ceux qui ont déjà utilisé GloboFun</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="avatar1.jpg" alt="Photo de profil de Sophie">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"J'ai trouvé un emploi comme guide touristique pour la Coupe du Monde grâce à GloboFun. L'application est intuitive et les opportunités sont nombreuses!"</p>
+                    <p class="testimonial-author">Sophie L. - Guide touristique</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="avatar2.jpg" alt="Photo de profil de Mohamed">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"En tant que voyageur, j'ai pu réserver mon hébergement et trouver des guides locaux pour me faire découvrir Casablanca. Une application indispensable!"</p>
+                    <p class="testimonial-author">Mohamed K. - Touriste</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="avatar3.jpg" alt="Photo de profil de Carlos">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"J'ai pu vendre mes produits artisanaux aux supporters du monde entier grâce au marketplace de GloboFun. Une excellente plateforme pour les entrepreneurs locaux!"</p>
+                    <p class="testimonial-author">Carlos R. - Artisan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners">
+        <div class="section-header">
+            <h2>Nos partenaires</h2>
+            <p>GloboFun collabore avec les meilleures entreprises pour vous offrir une expérience exceptionnelle</p>
+        </div>
+        <div class="partners-logos">
+            <div class="partner-logo">
+                <img src="partner1.png" alt="Logo partenaire">
+            </div>
+            <div class="partner-logo">
+                <img src="partner2.png" alt="Logo partenaire">
+            </div>
+            <div class="partner-logo">
+                <img src="partner3.png" alt="Logo partenaire">
+            </div>
+            <div class="partner-logo">
+                <img src="partner4.png" alt="Logo partenaire">
+            </div>
+            <div class="partner-logo">
+                <img src="partner5.png" alt="Logo partenaire">
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <div class="newsletter-content">
+            <h2>Restez informé</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur la Coupe du Monde 2030</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn primary">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">
+                    <span>Globo</span><span class="fun">Fun</span>
+                </div>
+                <p>Votre compagnon pour la Coupe du Monde 2030 et au-delà</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>GloboFun</h3>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Fonctionnalités</h3>
+                    <ul>
+                        <li><a href="#">Emplois</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Hébergement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Communauté</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GloboFun. Tous droits réservés.</p>
+            <p>Conçu avec passion pour la Coupe du Monde 2030</p>
+        </div>
+    </footer>
+
+    <div id="telecharger" class="download-app-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Téléchargez GloboFun</h2>
+            <p>Scannez le QR code ou cliquez sur les liens ci-dessous pour télécharger l'application</p>
+            <div class="qr-code">
+                <img src="qr-code.png" alt="QR Code pour télécharger l'application">
+            </div>
+            <div class="app-buttons">
+                <a href="#" class="app-button">
+                    <i class="fab fa-google-play"></i>
+                    <span>
+                        <small>Télécharger sur</small>
+                        Google Play
+                    </span>
+                </a>
+                <a href="#" class="app-button">
+                    <i class="fab fa-apple"></i>
+                    <span>
+                        <small>Télécharger sur</small>
+                        App Store
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
